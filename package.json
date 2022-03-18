@@ -9,6 +9,11 @@
     "test": "jest"
   },
   "author": "Nabadeep Thakuria",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nabadeep25/camelCaseConverter"
+  },
+  "homepage": "https://github.com/nabadeep25/camelCaseConverter/blob/master/README.md",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.11.0",

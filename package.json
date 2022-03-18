@@ -1,0 +1,20 @@
+{
+  "name": "camel-case-converter",
+  "version": "1.0.0",
+  "description": "This package can be used to convert object array and string in snake_case to camelCase",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "author": "Nabadeep Thakuria",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.0"
+  }
+}

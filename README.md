@@ -1,6 +1,6 @@
 ## camel-case-converter
 
-convert Array Object String, Json to **camelCase** format from snake_case format
+convert Array Object String, Json to **camelCase** format from snake_case/snake-case format
 
 ### usage
 

@@ -1,6 +1,6 @@
 {
   "name": "camel-case-converter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This package can be used to convert object array and string in snake_case/snake-case to camelCase",
   "main": "app.js",
   "scripts": {

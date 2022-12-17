@@ -1,4 +1,4 @@
-const { toCamelCase } = require('../app');
+const { toCamelCase, toCamelCaseString } = require('../app');
 
 test('convert object to camelCase', () => {
   expect(
@@ -19,7 +19,7 @@ test('convert nested object to camelCase', () => {
   ).toStrictEqual({ name: { firstName: 'first name', lastName: 'last name' } });
 });
 
-test('convert array  to camelCase', () => {
+test('convert array of object to camelCase', () => {
   expect(
     toCamelCase([
       { country_code: 'IN', other_details: '...' },
@@ -33,4 +33,15 @@ test('convert array  to camelCase', () => {
 
 test('convert string  to camelCase', () => {
   expect(toCamelCase('hello_world')).toStrictEqual('helloWorld');
+});
+
+test('convert array  to camelCase', () => {
+  expect(toCamelCase(['country_code', 'camel_case'])).toStrictEqual(['countryCode', 'camelCase']);
+});
+
+test('convert string  to camelCase toCamelCaseString 1', () => {
+  expect(toCamelCaseString('hello_world')).toStrictEqual('helloWorld');
+});
+test('convert string  to camelCase toCamelCaseString 2', () => {
+  expect(toCamelCaseString('hello-world')).toStrictEqual('helloWorld');
 });

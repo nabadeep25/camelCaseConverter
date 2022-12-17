@@ -1,10 +1,20 @@
+/**
+ * converted string to camelCase  from  snake_case/snake-case format
+ * @param {string} str string to be converted
+ * @returns string
+ */
 const toCamelCaseString = (str) => {
   if (typeof str === 'string' || str instanceof String) {
-    return str.replace(/([-_][a-zA-Z])/g, (g) => g.toUpperCase().replace('_', ''));
+    return str.replace(/([-_][a-zA-Z])/g, (g) => g.toUpperCase().replace(/[-_]/, ''));
   }
   return str;
 };
 
+/**
+ * Convert string, array, object to camelCase  from  snake_case/snake-case format
+ * @param {} val
+ * @returns converted value
+ */
 const toCamelCase = (val) => {
   if (!val) {
     return val;
@@ -33,4 +43,5 @@ const toCamelCase = (val) => {
 
 module.exports = {
   toCamelCase,
+  toCamelCaseString,
 };

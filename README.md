@@ -7,8 +7,10 @@ convert Array Object String, Json to **camelCase** format from snake_case/snake-
 install  
 `npm i camel-case-converter `
 
+#### toCamelCase
 ```
-const { toCamelCase } = require('camel-case-converter');
+const { toCamelCase  } = require('camel-case-converter');
+
 
 let simpleObject = {
   first_name: 'first name',
@@ -16,6 +18,7 @@ let simpleObject = {
 };
 simpleObject = toCamelCase(simpleObject);
 console.log(simpleObject);
+
 /* { firstName: 'first name', lastName: 'last name' } */
 
 
@@ -27,6 +30,7 @@ let nestedObject = {
 };
 nestedObject = toCamelCase(nestedObject);
 console.log(nestedObject);
+
 /* { name: { firstName: 'first name', lastName: 'last name' } } */
 
 
@@ -36,6 +40,7 @@ let array = [
 ];
 array = toCamelCase(array);
 console.log(array);
+
 /*
 [
     { countryCode: 'IN', otherDetails: '...' },
@@ -45,6 +50,26 @@ console.log(array);
 
 let string = 'hello_world';
 string = toCamelCase(string);
+console.log(string);
+
+/* helloWorld */
+
+
+
+```
+#### toCamelCaseString
+```
+const { toCamelCaseString  } = require('camel-case-converter');
+
+
+let string = 'hello_world';
+string = toCamelCaseString(string);
+console.log(string);
+
+/* helloWorld */
+
+let string = 'hello-world';
+string = toCamelCaseString(string);
 console.log(string);
 
 /* helloWorld */

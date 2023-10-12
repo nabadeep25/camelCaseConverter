@@ -2,14 +2,16 @@
 
 convert Array Object String, Json to **camelCase** format from snake_case/snake-case format
 
-### usage
+### usage exmaple
 
 install  
-`npm i camel-case-converter `
+```sh
+ npm i camel-case-converter 
+ ```
 
 #### toCamelCase
 
-```
+```js
 const { toCamelCase  } = require('camel-case-converter');
 
 
@@ -61,7 +63,7 @@ console.log(string);
 
 #### toCamelCaseString
 
-```
+```js
 const { toCamelCaseString  } = require('camel-case-converter');
 
 

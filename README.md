@@ -8,6 +8,7 @@ install
 `npm i camel-case-converter `
 
 #### toCamelCase
+
 ```
 const { toCamelCase  } = require('camel-case-converter');
 
@@ -57,7 +58,9 @@ console.log(string);
 
 
 ```
+
 #### toCamelCaseString
+
 ```
 const { toCamelCaseString  } = require('camel-case-converter');
 

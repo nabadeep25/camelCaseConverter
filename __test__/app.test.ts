@@ -1,4 +1,4 @@
-const { toCamelCase, toCamelCaseString } = require('../app');
+const { toCamelCase, toCamelCaseString } =require('../dist/app')
 
 test('convert object to camelCase', () => {
   expect(
